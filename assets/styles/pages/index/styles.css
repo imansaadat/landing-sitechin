@@ -1,0 +1,572 @@
+/** intro **/
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../../../images/base/video-pattern.png") no-repeat center center/cover;
+}
+
+.intro .video_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.intro .video_wrapper .close_icon {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro .video_wrapper .close_icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.intro .video_wrapper.show {
+  z-index: 2;
+}
+
+.intro .video_wrapper.show .close_icon {
+  display: block;
+}
+
+.intro .video_wrapper .video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro .header_content {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s ease-in-out 200ms;
+  transition: 1s ease-in-out 200ms;
+}
+
+.intro .header_content.fade {
+  opacity: 0;
+}
+
+.intro .header_content::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: url("../../../images/base/square-y.svg") no-repeat;
+  top: 20%;
+  left: 0;
+}
+
+.intro .header_content .top_header {
+  margin-bottom: 8rem;
+}
+
+.intro .header_content .top_header .logo img {
+  max-width: 124px;
+}
+
+.intro .header_content .text_content {
+  position: relative;
+  z-index: 10;
+}
+
+.intro .header_content .play_btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro .header_content .play_btn i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  padding-left: 1rem;
+  font-size: 9rem;
+  color: #fff;
+}
+
+.intro .mountain {
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.intro .mouse {
+  position: absolute;
+  width: 2.9rem;
+  height: 4rem;
+  border: 3px solid #5400ff;
+  border-radius: 25px;
+  bottom: 0.2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.intro .mouse .scroll_wheel {
+  display: inline-block;
+  width: 0.3rem;
+  height: 1rem;
+  background-color: #5400ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.intro .mouse.active .scroll_wheel {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+/** About Sitechin **/
+.about_sitechin {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.about_sitechin .block_about {
+  position: relative;
+}
+
+.about_sitechin .block_about::after, .about_sitechin .block_about::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  min-height: 253px;
+  z-index: -1;
+}
+
+.about_sitechin .block_about::after {
+  background: url("../../../images/base/triangle-l.svg") no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+.about_sitechin .block_about::before {
+  background: url("../../../images/base/triangle-r.svg") no-repeat;
+  bottom: 0;
+  right: 0;
+}
+
+.about_sitechin .block_about .block_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/** sitechin customers **/
+.sitechin_customers {
+  margin-bottom: 10rem;
+}
+
+.sitechin_customers .section_heading {
+  margin-bottom: 5rem;
+}
+
+.sitechin_customers .box {
+  text-align: center;
+  width: 170px;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../../../images/base/square.png") no-repeat;
+  margin: 1.5rem;
+}
+
+/** sitechin result **/
+.sitechin_result {
+  width: 100%;
+  min-height: 86rem;
+  background: url("../../../images/base/Rectangle_8.svg") no-repeat;
+  background-size: cover;
+  padding: 10rem 0 0 0;
+  margin-bottom: 10rem;
+}
+
+/** income section **/
+.income_section {
+  margin-top: -24rem;
+  margin-bottom: 10rem;
+}
+
+.income_section .income_content {
+  background-color: #ffffff;
+  padding: 6rem 4rem;
+  border-radius: 12px;
+}
+
+.income_section .income_content .field_block .label {
+  color: #404040;
+}
+
+.income_section .income_content .field_block .select {
+  min-height: 3rem;
+  color: #74788f;
+  font-size: 1.4rem;
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+
+.income_section .income_content .field_block .submit-result {
+  min-width: 12rem;
+  min-height: 3rem;
+  background-color: #ffb400;
+  border: none;
+  padding: 0 1rem;
+}
+
+.income_section .income_content .field_block .submit-result:hover {
+  background-color: #f1ae12;
+}
+
+.income_section .income_content .income-result {
+  color: #5400ff;
+}
+
+/**
+ section info includes
+(guarantee, settlement, education consultation, representation) 
+**/
+.section_info {
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.section_info.representation .text_content {
+  padding-right: 10rem;
+}
+
+.section_info.education_consultation {
+  position: relative;
+}
+
+.section_info.education_consultation .shape_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  z-index: -1;
+}
+
+.section_info.education_consultation .shape_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  z-index: -1;
+}
+
+.section_info .bank_pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 716px;
+  height: 427px;
+  background: url("../../../images/base/bank_pattern.png") no-repeat;
+  z-index: -1;
+}
+
+.section_info .image_wrapper img {
+  width: 100%;
+}
+
+/** representation steps **/
+.representation_steps {
+  margin-bottom: 8rem;
+}
+
+.representation_steps .circle {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F6F3FF));
+  background-image: linear-gradient(to bottom, #fff, #F6F3FF);
+  width: 20rem;
+  height: 20rem;
+  color: #7E3EFF;
+}
+
+/** form representation includes (modal and form section) **/
+.forms_representation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  -webkit-clip-path: ellipse(0% 0% at 100% 0%);
+          clip-path: ellipse(0% 0% at 100% 0%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.forms_representation.active {
+  -webkit-clip-path: ellipse(100% 100% at 50% 30%);
+          clip-path: ellipse(100% 100% at 50% 30%);
+  pointer-events: auto;
+}
+
+.forms_representation .content {
+  background: #fff url("../../../images/base/form-bg.svg");
+  position: relative;
+}
+
+.forms_representation .content .modal_close_icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.forms_representation .content .modal_close_icon:hover {
+  color: #5400ff;
+}
+
+.forms_representation .content .form_block .field_block {
+  margin-bottom: 2rem;
+}
+
+.forms_representation .content .form_block .field_block .field_input {
+  width: 100%;
+  height: 3.5rem;
+  color: #222;
+  background-color: #fafafa;
+  border: 0.1rem solid #e2e2e2;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  padding: 1.1rem;
+  caret-color: #5400ff;
+}
+
+.forms_representation .content .form_block .field_block .field_input:focus {
+  border: 0.1rem solid #5400ff;
+}
+
+.forms_representation .content .form_block .field_block .field_input.submit-field {
+  border: none;
+  background-color: #5400ff;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.forms_representation .content .form_block .field_block .field_input.submit-field:hover {
+  opacity: 0.8;
+}
+
+.forms_representation .content .form_block .field_block .field_label {
+  width: 100%;
+}
+
+.forms_representation .content .form_block .field_block.time-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forms_representation .content .form_block .field_block.time-set .time-item {
+  margin: 0 1rem;
+}
+
+.forms_representation .content .form_block .field_block.time-set .time-item .time-set-field {
+  display: none;
+}
+
+.forms_representation .content .form_block .field_block.time-set .time-item .time-set-field:checked + label {
+  background-color: #5400ff;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.forms_representation .content .form_block .field_block.time-set .time-item .time-set-label {
+  border: 0.1rem solid #222;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.forms_representation.representation_section {
+  position: static;
+  -webkit-clip-path: none;
+          clip-path: none;
+  background: none;
+  margin-bottom: 12rem;
+}
+
+/** explanation_box **/
+.explanation_section {
+  margin-bottom: 10rem;
+}
+
+.explanation_section .box {
+  position: relative;
+}
+
+.explanation_section .box .shadow_line {
+  position: absolute;
+  top: 66.5%;
+  width: 99.5%;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 250, 250, 0.85)), to(rgba(255, 255, 255, 0.99)));
+  background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.85), rgba(255, 255, 255, 0.99));
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.explanation_section .box .shadow_line.show {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.explanation_section .box::after {
+  content: "";
+  text-align: center;
+  width: 100%;
+  min-height: 2.5rem;
+  position: absolute;
+  bottom: -0.4rem;
+  background: url("../../../images/base/know-more.svg") no-repeat center;
+}
+
+.explanation_section .box .content_box {
+  height: 19rem;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.explanation_section .box .content_box .section_heading {
+  color: #5400ff;
+}
+
+.explanation_section .box .content_box .excerpt {
+  text-align: justify;
+}
+
+.explanation_section .box .content_box.show_text {
+  height: 28rem;
+}
+
+.explanation_section .box .know_more {
+  text-align: center;
+  position: relative;
+  top: -0.3rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/** footer **/
+.footer {
+  background-color: #fbfbfb;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
+  /** intro **/
+  .intro .header_content .play_btn {
+    top: 70%;
+  }
+  .intro .header_content::after, .intro .header_content::before {
+    display: none;
+  }
+  /* section info*/
+  .section_info.representation .text_content {
+    padding: 0;
+  }
+  /* explanation section */
+  .explanation_section .box .shadow_line {
+    display: none;
+  }
+  .explanation_section .box::after {
+    display: none;
+  }
+  .explanation_section .box .content_box {
+    height: auto;
+  }
+  .explanation_section .box .know_more {
+    display: none;
+  }
+  /*sitechin result  */
+  .sitechin_result {
+    min-height: 76rem;
+    margin-bottom: 0;
+  }
+  /* income */
+  .income_content .right_left_line span::after, .income_content .right_left_line span::before {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
